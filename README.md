@@ -58,6 +58,7 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
 
 ## 💻 Usage
 
-1. Execute the script via terminal:
-   ```powershell
-   .\AWS_Cleanup.ps1
+1. **Download the script** to your environment:
+   ```bash
+   wget [https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1](https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1)
+
