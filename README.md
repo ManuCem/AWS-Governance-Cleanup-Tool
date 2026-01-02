@@ -62,9 +62,7 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
    ```bash
    wget https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1
    
-   ```bash
-   ./AWS_Cleanup.ps1
-   
+
 
 
 
