@@ -60,6 +60,10 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
 
 1. **Download the script** to your environment:
    ```bash
-   wget https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1 (https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1)
+   wget https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1
+
+
+(https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1)
+
 
 
