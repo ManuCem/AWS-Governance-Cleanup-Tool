@@ -1,12 +1,12 @@
-# ☁️ AWS Governance & Cost Optimization Tool
+# ☁️ AWS Cleanup & Cost Saving Tool
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)
 ![AWS](https://img.shields.io/badge/AWS-CLI-orange?logo=amazon-aws)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A modular PowerShell automation utility designed for cloud governance and operational cost management.
+A PowerShell tool made to help manage AWS resources and reduce costs.
 
-The **AWS Governance Cleanup Tool** provides a structured, menu-driven interface to identify and decommission specific AWS resources (S3, EC2, Lambda, etc.) or execute a full environment audit and purge to eliminate unnecessary expenditure.
+The **AWS Cleanup Tool** provides a simple, menu-driven interface to help you find and delete specific AWS services (S3, EC2, Lambda, etc.) or clean up your entire account to save money.
 
 ---
 
@@ -14,7 +14,7 @@ The **AWS Governance Cleanup Tool** provides a structured, menu-driven interface
 
 **DO NOT COPY-PASTE THE CODE MANUALLY.**
 
-This tool utilizes specific **UTF-8 with BOM** encoding to render the interface and status indicators correctly. Copying the raw text into a standard editor may corrupt the encoding, causing the script to fail.
+This tool uses **UTF-8 with BOM** encoding to make the interface look correct. If you copy the text into a standard editor, the encoding might break and the script will fail.
 
 ### ✅ How to Install:
 1. **Download the file:** Click the green `Code` button -> `Download ZIP`.
@@ -25,15 +25,15 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
 
 ## 🚀 Key Features
 
-* **Modular Governance:** Selectively decommission specific services without impacting critical infrastructure.
-* **Cost Optimization:** Automatically targets unattached Elastic IPs and "Available" EBS Volumes to reduce OpEx.
-* **Environment Deep-Cleaning:** Integrated logic for complex services including AWS Glue (Crawlers, Databases, and ETL Jobs).
-* **Audit Trail:** Generates a local `.txt` report ("Graveyard Log") for compliance, detailing every resource ID terminated.
-* **Safety Protocols:** Includes critical confirmation steps for high-impact "Nuclear" actions.
+* **Choose what to delete:** You can pick specific services so you don't delete important infrastructure.
+* **Save Money:** It automatically finds and removes unused resources like Elastic IPs and EBS Volumes to lower your monthly bill.
+* **Deep Cleaning:** Includes logic to clean complex services like AWS Glue (Crawlers, Databases, and Jobs).
+* **Activity Log:** It creates a `.txt` file (a report) that lists every resource ID that was deleted for your records.
+* **Safety:** The script asks you to confirm your choice before doing any major deletions.
 
 ## 🎯 Supported Services
 
-* **S3 Buckets** (Recursive/Force deletion)
+* **S3 Buckets** (Force deletion)
 * **EC2 Instances**
 * **IAM Roles**
 * **Lambda Functions**
@@ -47,9 +47,9 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
 
 ## 🛠️ Prerequisites
 
-1.  **AWS CLI:** Configured with administrative or appropriate cleanup permissions.
-2.  **PowerShell:** Version 5.1 or Core 7+.
-3.  **Execution Policy:** Enable script execution via:
+1.  **AWS CLI:** Set up with the right permissions to delete resources.
+2.  **PowerShell:** Version 5.1 or newer.
+3.  **Execution Policy:** Run this command to allow the script to run:
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
@@ -58,6 +58,6 @@ This tool utilizes specific **UTF-8 with BOM** encoding to render the interface 
 
 ## 💻 Usage
 
-1. **Download the script** to your environment:
+1. **Download the script** to your computer:
    ```bash
-   wget https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1
+   wget [https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1](https://raw.githubusercontent.com/ManuCem/AWS-Governance-Cleanup-Tool/main/AWS_Cleanup.ps1)
